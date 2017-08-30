@@ -1,0 +1,423 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="https://code.google.com/p/selenium/wiki/InternetExplorerDriver" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "ABZ6GAfU5HaGFZCl67IlAvX5qWKd84mmow:1454142672226";
+ 
+ 
+ var CS_env = {"domainName": null, "projectName": "selenium", "token": "ABZ6GAfU5HaGFZCl67IlAvX5qWKd84mmow:1454142672226", "relativeBaseUrl": "", "projectHomeUrl": "/p/selenium", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/14479466025391487431", "profileUrl": "/u/115850199040061695024/", "loggedInUserEmail": "tcwmj2005@gmail.com"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-7221039-2'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>InternetExplorerDriver - 
+ selenium -
+ 
+ Everything you wanted to know about the Internet Explorer driver - 
+ Browser automation framework - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/14479466025391487431/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/14479466025391487431/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/selenium/gitchanges/basic?path=/InternetExplorerDriver.wiki&amp;repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/14479466025391487431/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="#" id="multilogin-dropdown" onclick="return false;"
+ ><u><b>tcwmj2005@gmail.com</b></u> <small>&#9660;</small></a>
+ 
+ 
+ | <a href="/u/115850199040061695024/" id="projects-dropdown" onclick="return false;"
+ ><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="/u/115850199040061695024/" onclick="_CS_click('/gb/ph/profile');"
+ title="Profile, Updates, and Settings"
+ ><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fselenium%2Fwiki%2FInternetExplorerDriver" 
+ onclick="_CS_click('/gb/ph/signout');"
+ ><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/selenium">
+ <a href="/p/selenium/">
+ 
+ 
+ <img src="/p/selenium/logo?cct=1427428578"
+ alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/selenium/"><span itemprop="name">selenium</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/selenium/"><span itemprop="description">Browser automation framework</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/selenium/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/selenium/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/selenium/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/selenium/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=selenium">
+ <button>Export to GitHub</button>
+ 
+ </a>
+ 
+ 
+ <div class=gtbc></div>
+</div>
+
+ 
+
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/selenium/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5" >&nbsp;My starred pages</option>
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img"
+ src="https://ssl.gstatic.com/codesite/ph/images/star_off.gif"
+ style="cursor:pointer"
+ onclick="_CS_toggleStar(this,
+ {'scope': 'wiki',
+ 'user': '_CURRENT_USER',
+ 'item': 'selenium:InternetExplorerDriver'
+ });"/>
+ 
+ <span style="font-size:120%;font-weight:bold">InternetExplorerDriver</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Everything you wanted to know about the Internet Explorer driver</i>
+ 
+ 
+ <br/>
+ 
+ <a class="label" style="padding-top: 2px"
+ href="/p/selenium/w/list?q=label:WebDriver"
+ title=""
+ >WebDriver</a>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Thu May 29 10:53:44 2014">
+ May 29, 2014</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/105237063714441513771/">james.h....@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Internet_Explorer_Driver"></a>Internet Explorer Driver<a href="#Internet_Explorer_Driver" class="section_anchor"></a></h1><p>The <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a> is a standalone server which implements WebDriver&#x27;s wire protocol. This driver has been tested with IE 6, 7, 8, 9, and 10 on appropriate combinations of XP, Vista and Windows 7.  </p><p>The driver supports running 32-bit and 64-bit versions of the browser. The choice of how to determine which &quot;bit-ness&quot; to use in launching the browser depends on which version of the IEDriverServer.exe is launched. If the 32-bit version of IEDriverServer.exe is launched, the 32-bit version of IE will be launched. Similarly, if the 64-bit version of IEDriverServer.exe is launched, the 64-bit version of IE will be launched. </p><h2><a name="Installing"></a>Installing<a href="#Installing" class="section_anchor"></a></h2><p>You do not need to run an installer before using the <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a>, though some configuration is required. The standalone server executable must be downloaded from the <a href="http://code.google.com/p/selenium/downloads/list" rel="nofollow">Downloads</a> page and placed in your <a href="http://en.wikipedia.org/wiki/PATH_(variable)" rel="nofollow">PATH</a>. </p><h2><a name="Pros"></a>Pros<a href="#Pros" class="section_anchor"></a></h2><ul><li>Runs in a real browser and supports Javascript </li></ul><h2><a name="Cons"></a>Cons<a href="#Cons" class="section_anchor"></a></h2><ul><li>Obviously the <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a> will only work on Windows! </li><li>Comparatively slow (though still pretty snappy :) </li></ul><h2><a name="Command-Line_Switches"></a>Command-Line Switches<a href="#Command-Line_Switches" class="section_anchor"></a></h2><p>As a standalone executable, the behavior of the IE driver can be modified through various command-line arguments. To set the value of these command-line arguments, you should consult the documentation for the language binding you are using. The command line switches supported are described in the table below. All -<tt>&lt;switch&gt;</tt>, --<tt>&lt;switch&gt;</tt> and /<tt>&lt;switch&gt;</tt> are supported. </p><p><table class="wikitable"><tr><td style="border: 1px solid #ccc; padding: 5px;"> Switch </td><td style="border: 1px solid #ccc; padding: 5px;"> Meaning </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --port=<tt>&lt;portNumber&gt;</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the port on which the HTTP server of the IE driver will listen for commands from language bindings. Defaults to 5555. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --host=<tt>&lt;hostAdapterIPAddress&gt;</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the IP address of the host adapter on which the HTTP server of the IE driver will listen for commands from language bindings. Defaults to 127.0.0.1. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --log-level=<tt>&lt;logLevel&gt;</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the level at which logging messages are output. Valid values are FATAL, ERROR, WARN, INFO, DEBUG, and TRACE. Defaults to FATAL. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --log-file=<tt>&lt;logFile&gt;</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the full path and file name of the log file. Defaults to stdout. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --extract-path=<tt>&lt;path&gt;</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the full path to the directory used to extract supporting files used by the server. Defaults to the TEMP directory if not specified. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --silent </td><td style="border: 1px solid #ccc; padding: 5px;"> Suppresses diagnostic output when the server is started. </td></tr> </table></p><h2><a name="Important_System_Properties"></a>Important System Properties<a href="#Important_System_Properties" class="section_anchor"></a></h2><p>The following system properties (read using <tt>System.getProperty()</tt> and set using <tt>System.setProperty()</tt> in Java code or the &quot;<tt>-DpropertyName=value</tt>&quot; command line flag) are used by the <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a>: </p><p><table class="wikitable"><tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Property</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>What it means</strong> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> webdriver.ie.driver </td><td style="border: 1px solid #ccc; padding: 5px;"> The location of the IE driver binary. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> webdriver.ie.driver.host </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the IP address of the host adapter on which the IE driver will listen. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> webdriver.ie.driver.loglevel </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the level at which logging messages are output. Valid values are FATAL, ERROR, WARN, INFO, DEBUG, and TRACE. Defaults to FATAL. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> webdriver.ie.driver.logfile </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the full path and file name of the log file. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> webdriver.ie.driver.silent </td><td style="border: 1px solid #ccc; padding: 5px;"> Suppresses diagnostic output when the IE driver is started. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> webdriver.ie.driver.extractpath </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the full path to the directory used to extract supporting files used by the server. Defaults to the TEMP directory if not specified. </td></tr> </table></p><h2><a name="Required_Configuration"></a>Required Configuration<a href="#Required_Configuration" class="section_anchor"></a></h2><ul><li>The IEDriverServer exectuable must be <a href="http://code.google.com/p/selenium/downloads/list" rel="nofollow">downloaded</a> and placed in your <a href="http://en.wikipedia.org/wiki/PATH_(variable)" rel="nofollow">PATH</a>. </li><li>On IE 7 or higher on Windows Vista or Windows 7, you must set the Protected Mode settings for each zone to be the same value. The value can be on or off, as long as it is the same for every zone. To set the Protected Mode settings, choose &quot;Internet Options...&quot; from the Tools menu, and click on the Security tab. For each zone, there will be a check box at the bottom of the tab labeled &quot;Enable Protected Mode&quot;. </li><li>Additionally, &quot;Enhanced Protected Mode&quot; must be disabled for IE 10 and higher. This option is found in the Advanced tab of the Internet Options dialog. </li><li>The browser zoom level must be set to 100% so that the native mouse events can be set to the correct coordinates. </li><li>For IE 11 <i>only</i>, you will need to set a registry entry on the target computer so that the driver can maintain a connection to the instance of Internet Explorer it creates. For 32-bit Windows installations, the key you must examine in the registry editor is <tt>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BFCACHE</tt>. For 64-bit Windows installations, the key is <tt>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BFCACHE</tt>. Please note that the <tt>FEATURE_BFCACHE</tt> subkey may or may not be present, and should be created if it is not present. <strong>Important:</strong> Inside this key, create a DWORD value named <tt>iexplore.exe</tt> with the value of 0. </li></ul><h2><a name="Native_Events_and_Internet_Explorer"></a>Native Events and Internet Explorer<a href="#Native_Events_and_Internet_Explorer" class="section_anchor"></a></h2><p>As the <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a> is Windows-only, it attempts to use so-called &quot;native&quot;, or OS-level events to perform mouse and keyboard operations in the browser. This is in contrast to using simulated JavaScript events for the same operations. The advantage of using native events is that it does not rely on the JavaScript sandbox, and it ensures proper JavaScript event propagation within the browser. However, there are currently some issues with mouse events when the IE browser window does not have focus, and when attempting to hover over elements. </p><h3><a name="Browser_Focus"></a>Browser Focus<a href="#Browser_Focus" class="section_anchor"></a></h3><p>The challenge is that IE itself appears to not fully respect the Windows messages we send the IE browser window (WM_MOUSEDOWN and WM_MOUSEUP) if the window doesn&#x27;t have the focus. Specifically, the element being clicked on will receive a focus window around it, but the click will not be processed by the element. Arguably, we shouldn&#x27;t be sending messages at all; rather, we should be using the SendInput() API, but that API explicitly requires the window to have the focus. We have two conflicting goals with the WebDriver project. </p><p>First, we strive to emulate the user as closely as possible. This means using native events rather than simulating the events using JavaScript. </p><p>Second, we want to not require focus of the browser window being automated. This means that just forcing the browser window to the foreground is suboptimal. </p><p>An additional consideration is the possibility of multiple IE instances running under multiple WebDriver instances, which means any such &quot;bring the window to the foreground&quot; solution will have to be wrapped in some sort of synchronizing construct (mutex?) within the IE driver&#x27;s C++ code. Even so, this code will still be subject to race conditions, if, for example, the user brings another window to the foreground between the driver bringing IE to the foreground and executing the native event. </p><p>The discussion around the requirements of the driver and how to prioritize these two conflicting goals is ongoing. The current prevailing wisdom is to prioritize the former over the latter, and document that your machine will be unavailable for other tasks when using the IE driver. However, that decision is far from finalized, and the code to implement it is likely to be rather complicated.  </p><h3><a name="Hovering_Over_Elements"></a>Hovering Over Elements<a href="#Hovering_Over_Elements" class="section_anchor"></a></h3><p>When you attempt to hover over elements, and your physical mouse cursor is within the boundaries of the IE browser window, the hover will not work. More specifically, the hover will appear to work for a fraction of a second, and then the element will revert back to its previous state. The prevailing theory why this occurs is that IE is doing hit-testing of some sort during its event loop, which causes it to respond to the physical mouse position when the physical cursor is within the window bounds. The WebDriver development team has been unable to discover a workaround for this behavior of IE. </p><h3><a name="Clicking_&lt;option&gt;_Elements_or_Submitting_Forms_and_alert()"></a>Clicking <tt>&lt;option&gt;</tt> Elements or Submitting Forms and alert()<a href="#Clicking_&lt;option&gt;_Elements_or_Submitting_Forms_and_alert()" class="section_anchor"></a></h3><p>There are two places where the IE driver does not interact with elements using native events. This is in clicking <tt>&lt;option&gt;</tt> elements within a <tt>&lt;select&gt;</tt> element. Under normal circumstances, the IE driver calculates where to click based on the position and size of the element, typically as returned by the JavaScript getBoundingClientRect() method. However, for <tt>&lt;option&gt;</tt> elements, getBoundingClientRect() returns a rectangle with zero position and zero size. The IE driver handles this one scenario by using the click() Automation Atom, which essentially sets the .selected property of the element and simulates the onChange event in JavaScript. However, this means that if the onChange event of the <tt>&lt;select&gt;</tt> element contains JavaScript code that calls alert(), confirm() or prompt(), calling WebElement&#x27;s click() method will hang until the modal dialog is manually dismissed. There is no known workaround for this behavior using only WebDriver code. </p><p>Similarly, there are some scenarios when submitting an HTML form via WebElement&#x27;s submit() method may have the same effect. This can happen if the driver calls the JavaScript submit() function on the form, and there is an onSubmit event handler that calls the JavaScript alert(), confirm(), or prompt() functions.  </p><p>This restriction is filed as <a title="When I use a Select tag with an onChange event that causes a prompt  Selenium freezes." class=closed_ref href="/p/selenium/issues/detail?id=3508">&nbsp;issue 3508&nbsp;</a>. </p><h2><a name="Multiple_instances_of"></a>Multiple instances of <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a><a href="#Multiple_instances_of" class="section_anchor"></a></h2><p>With the creation of the IEDriverServer.exe, it should be possible to create and use multiple simultaneous instances of the <a href="/p/selenium/wiki/InternetExplorerDriver">InternetExplorerDriver</a>. However, this functionality is largely untested, and there may be issues with cookies, window focus, and the like. If you attempt to use multiple instances of the IE driver, and run into such issues, consider using the <a href="/p/selenium/wiki/RemoteWebDriver">RemoteWebDriver</a> and virtual machines. </p><p>There are 2 solutions for problem with cookies (and another session items) shared between multiple instances of InternetExplorer. </p><p>The first is to start your InternetExplorer in private mode. After that InternetExplorer will be started with clean session data and will not save changed session data at quiting. To do so you need to pass 2 specific capabilities to driver: <tt>ie.forceCreateProcessApi</tt> with <tt>true</tt> value and <tt>ie.browserCommandLineSwitches</tt> with <tt>-private</tt> value. Be note that it will work only for InternetExplorer 8 and newer, and Windows Registry <tt>HKLM_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Main</tt> path should contain key <tt>TabProcGrowth</tt> with <tt>0</tt> value. </p><p>The second is to clean session during InternetExplorer starting. For this you need to pass specific <tt>ie.ensureCleanSession</tt> capability with <tt>true</tt> value to driver. This clears the cache for all running instances of InternetExplorer, including those started manually. </p><h2><a name="Running_IEDriverServer.exe_Remotely"></a>Running IEDriverServer.exe Remotely<a href="#Running_IEDriverServer.exe_Remotely" class="section_anchor"></a></h2><p>The HTTP server started by the IEDriverServer.exe sets an access control list to only accept connections from the local machine, and disallows incoming connections from remote machines. At present, this cannot be changed without modifying the source code to the IEDriverServer.exe. To run the Internet Explorer driver on a remote machine, use the Java standalone remote server in connection with your language binding&#x27;s equivalent of <a href="/p/selenium/wiki/RemoteWebDriver">RemoteWebDriver</a>. </p><h2><a name="Running_IEDriverServer.exe_Under_a_Windows_Service"></a>Running IEDriverServer.exe Under a Windows Service<a href="#Running_IEDriverServer.exe_Under_a_Windows_Service" class="section_anchor"></a></h2><p>Attempting to use IEDriverServer.exe as part of a Windows Service application is expressly unsupported. Service processes, and processes spawned by them, have much different requirements than those executing in a regular user context. IEDriverServer.exe is explicitly untested in that environment, and includes Windows API calls that are documented to be prohibited to be used in service processes. While it may be possible to get the IE driver to work while running under a service process, users encountering problems in that environment will need to seek out their own solutions. </p>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="InternetExplorerDriver" >
+ <input type="hidden" name="token" value="ABZ6GAfU5HaGFZCl67IlAvX5qWKd84mmow:1454142672226" >
+ </form>
+
+
+ <script src="https://ssl.gstatic.com/codesite/ph/14479466025391487431/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/14479466025391487431/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/14479466025391487431/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/14479466025391487431/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

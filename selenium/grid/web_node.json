@@ -1,0 +1,37 @@
+{
+  "capabilities": [
+    {
+      "browserName": "internet explorer",
+      "version": "11",
+      "platform": "WINDOWS",
+      "seleniumProtocol": "WebDriver",
+      "maxInstances": 1
+    },
+    {
+      "browserName": "firefox",
+      "version": "35",
+      "platform": "WINDOWS",
+      "seleniumProtocol": "WebDriver",
+      "maxInstances": 5
+    },
+    {
+      "browserName": "chrome",
+      "version": "43",
+      "platform": "WINDOWS",
+      "seleniumProtocol": "WebDriver",
+      "maxInstances": 5
+    }
+  ],
+  "configuration": {
+    "nodeTimeout": 120,
+    "port": 5555,
+    "hubPort": 4444,
+    "hubHost": "172.20.20.193",
+    "nodePolling": 2000,
+    "registerCycle": 10000,
+    "register": true,
+    "cleanUpCycle": 2000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "maxSession": 5
+  }
+}

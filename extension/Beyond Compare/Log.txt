@@ -1,0 +1,6 @@
+12/8/2016 8:56:13 AM  >> log normal
+12/8/2016 8:56:13 AM  >> compare rules-based
+12/8/2016 8:56:13 AM  >> option confirm:yes-to-all
+12/8/2016 8:56:13 AM  >> file-report layout:side-by-side options:ignore-unimportant,display-context &
+12/8/2016 8:56:13 AM  >> output-to:"E:\report5.html" output-options:html-color "H:\ProductLine\FED\TestResults\FED_1.7.1\AR1.15+ExportToExcel+ByKun\download\US FED Reserve(ExportToExcel)\FED_2999_FFIEC009_v1_20151231.xlsx" "H:\ProductLine\FED\TestResults\FED_1.7.1\AR1.15+ExportToExcel+ByKun\download\US FED Reserve(ExportToExcel)\FED_2999_FFIEC009_v2_20160930.xlsx"
+12/8/2016 8:56:21 AM  脚本完成在 7.97 秒 完成
